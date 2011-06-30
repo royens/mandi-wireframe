@@ -1,0 +1,188 @@
+/* ============================================================================
+ * Reset default browser CSS.
+ * ==========================================================================*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5,h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sup, sub, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {background:transparent; border:0; margin:0; padding;0; vertical-align:baseline;}
+body {line-height:1;}
+h1, h2, h3, h4, h5, h6 {clear:both; font-weight:normal;}
+ol, ul {list-style:none;}
+blockquote q {quotes:none;}
+blockquote:before, blockquote:after, q:before, q:after {content:''; content:none;}
+del {text-decoration:line-through;}
+table {border-collapse:collapse; border-spacing:0;}
+a img {border:none;}
+
+/* ============================================================================
+ * Rebuild Styles after reset
+ * ==========================================================================*/
+body {margin:0; background:url('images/pattern3.png') repeat left top;}
+h1, h2, h3, h4, h5, h6 {margin-bottom:12px; clear:both;}
+hr {background-color:#999; border:0; heigth:1px; margin-bottom:1.5em;}
+p {margin-bottom:12px;}
+ul, ol {margin:0 0 1.5em 1em;}
+ol {list-style:decimal;}
+ol ol {list-style:upper-alpha;}
+ol ol ol {list-style:lower-roman;}
+ol ol ol ol {list-style:lower-alpha;}
+ul ul, ol ol, ul ol, ol ul {margin-bottom:0;}
+dl {margin:0 1.5em;}
+dt {font-weight:bold;}
+dd {margin-bottom:1.5em;}
+strong, b {font-weight:bold;}
+cite, em, i {font-style:italic;}
+blockquote {margin:0 3em; font-style:italic;}
+blockquote em, blockquote i, blockquote cite {font-style:normal;}
+q {font-style:italic;}
+q em, q i, q cite {font-style:normal;}
+pre {line-height:1.5; margin-bottom:1.5em;}
+abbr, acronym {border-bottom:1px dotted #4f4f4f; cursor:help;}
+ins {text-decoration:none;}
+sup, sub {height:0; line-height:1; vertical-align:baseline; position:relative;}
+sup {bottom:1ex;}
+sub {top:.5ex;}
+address {font-style:italic; margin:0 0 1em 1.5em;}
+
+/* ============================================================================
+ * Typography
+ * ==========================================================================*/
+body, input, textarea {color:#4a4a4a; font:normal normal normal 14px/1.5 Georgia, 'Times New Roman', serif;}
+pre, code {font:14px Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono l', 'Monaca', 'Courier New', 'Courier', monospace;}
+h1, h2, h3, h4, h5, h6 {font-weight:bold; font-style:none; font-family:Georgia, serif; letter-spacing:-1px; line-height:48px;}
+h1 {font-size:36px;}
+h2 {font-size:32px;}
+h3 {font-size:28px;}
+h4 {font-size:24px;}
+h5 {font-size:20px;}
+h6 {font-size:16px;}
+
+body {
+    background:#231d0d;
+}
+body .background-left {
+    position:fixed;
+    bottom:-50px;
+    left:-30px;
+    z-index:-1;
+}
+body .background-right {
+    position:fixed;
+    top:-30px;
+    right:-20px;
+    z-index:-1;
+}
+#wrapper {
+    -moz-box-shadow:0 8px 20px #000;
+    -webkit-box-shadow:0 8px 20px #000;
+    box-shadow:0 8px 20px #000;
+    border:1px solid #231d0d;
+    background:#ebebeb;
+    margin-top:2px;
+    margin-bottom:12px;
+}
+#header {
+    margin-left:0;
+    margin-right:0;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:12px;
+    padding-bottom:12px;
+    background:#75c9cb;
+    position:relative;
+    height:72px;
+    overflow:hidden;
+}
+#site-title {font:normal normal normal 36px/48px 'VivaldiItalic', serif; text-align:center; color:#231d0d; margin:0;}
+#site-title a {color:#231d0d; text-decoration:none;}
+#tag-line {font:italic normal normal 14px/24px Georgia, serif; color:#231d0d; text-align:center; margin:0;}
+
+#nav ul {list-style:none outside none; text-align:center; margin-top:26px;}
+#nav ul li {display:inline;}
+#nav ul li a {margin-right:12px; text-decoration:none; color:#fff; font-weight:bold; line-height:20px; padding-top:6px; padding-bottom:6px; padding-left:10px; padding-right:10px; -moz-border-radius:4px; -webkit-border-radius:4px; background:#231d0d;}
+#nav ul li a.current {background:#497e80;}
+#nav ul li a:hover {background:#497e80;}
+#second-nav ul{background:#497e80; margin:0; position:absolute; bottom:0; right:0; padding-right:32px;}
+#second-nav ul {list-style:none outside none; text-align:center;}
+#second-nav ul li {display:inline;}
+#second-nav ul li a {margin-right:12px; text-decoration:none; color:#fff; line-height:20px; padding:6px 10px;}
+#content {
+    margin-top:24px;
+    margin-bottom:24px;
+}
+#bottom-row {
+    margin-top:24px;
+}
+#bottom-row h3 {
+    margin-bottom:12px;
+}
+#box-one, #box-two, #box-three, #box-four {
+    width:218px;
+    height:150px;
+    border:1px solid #494343;
+    position:relative;
+    -moz-box-shadow:inset 0px 0px 10px #000;
+}
+#box-one img, #box-two img{
+    z-index:1;
+}
+#bottom-row h4 {
+    z-index:10;
+    background:rgba(35,29,13,0.8);
+    position:absolute;
+    right:6px;
+    bottom:6px;
+    color:#fff;
+    font:normal normal bold 16px/24px Georgia, serif;
+    width:200px;
+}
+#footer {
+    margin-left:0;
+    margin-right:0;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:24px;
+    padding-bottom:24px;
+    background:#75c9cb;
+    color:#fff;
+}
+#footer p {
+    margin-bottom:0;
+}
+#footer a {
+    color:#fff;
+    text-decoration:none;
+}
+#slideshow {
+    position:relative;
+    width:900px;
+    margin:0 auto;
+    box-shadow:0 0px 15px #231d0d;
+}
+#slideshow img {
+    width:900px;
+}
+#banner-image img {
+    display:block;
+    margin:0 auto;
+    -moz-box-shadow:0 2px 5px #231d0d;
+    border:2px solid #231d0d;
+}
+
+@font-face {
+    font-family:'HenryMorganHandRegular';
+    src:url('../fonts/henrymorganhand-webfont.eot');
+    src: url('../fonts/henrymorganhand-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/henrymorganhand-webfont.woff') format('woff'),
+         url('../fonts/henrymorganhand-webfont.ttf') format('truetype'),
+         url('../fonts/henrymorganhand-webfont.svg#HenryMorganHandRegular') format('svg');
+    font-weight:normal;
+    font-weight:normal;
+}
+@font-face {
+    font-family:'VivaldiItalic';
+    src: url('../fonts/vivaldi_italic-webfont.eot');
+    src: url('../fonts/vivaldi_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/vivaldi_italic-webfont.woff') format('woff'),
+         url('../fonts/vivaldi_italic-webfont.ttf') format('truetype'),
+         url('../fonts/vivaldi_italic-webfont.svg#VivaldiItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+

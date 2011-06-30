@@ -1,0 +1,162 @@
+*{
+    margin:0;
+    padding:0;
+}
+body {
+    overflow:hidden;
+    background-color:#000;
+    font:normal normal normal 14px/14px Georgia, serif;
+}
+.background-left {
+    position:fixed;
+    bottom:-50px;
+    left:-30px;
+    z-index:-1;
+}
+.background-right {
+    position:fixed;
+    top:-30px;
+    right:-20px;
+    z-index:-1;
+}
+#header {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    overflow:hidden;
+    background:#75c9cb;
+    margin:0 auto;
+}
+#wrapper {
+    width:960px;
+    margin:0 auto;
+    padding-top:6px;
+    padding-bottom:6px;
+    overflow:hidden;
+}
+#masthead {
+    dispaly:inline;
+    float:left;
+    width:300px;
+    margin-left:0;
+    margin-right:10px;
+    height:72px;
+}
+#nav {
+    display:inline;
+    float:left;
+    width: 620px;
+    margin-left:10px;
+    margin-right:0;
+}
+#site-title {
+    font:normal normal normal 36px/48px 'VivaldiItalic', serif;
+    text-align:center;
+    color:#231d0d;
+}
+#site-title a {
+    color:#231d0d;
+    text-decoration:none;
+}
+#tag-line {
+    font:italic normal normal 14px/24px Georgia, serif;
+    color:#231d0d;
+    text-align:center;
+}
+#nav ul {
+    list-style:none outside none;
+    text-align:center;
+}
+#nav ul li {
+    display:inline;
+}
+#nav ul li a {
+    margin-right:12px;
+    text-decoration:none;
+    color:#fff;
+    font-weight:bold;
+    line-height:20px;
+    padding:6px 10px;
+    -moz-border-radius:4px;
+    background:#231d0d;
+}
+#nav ul li a.current {
+    background:#497e80;
+}
+#nav ul li a:hover {
+    background:#497e80;
+}
+
+#loading {
+    display:none;
+    width:100px;
+    height:100px;
+    position:absolute;
+    top:40%;
+    left:50%;
+    margin-left:-24px;
+    background:transparent url(../icons/ajax-loader.gif) no-repeat top left;
+}
+
+#thumbsWrapper {
+    position:absolute;
+    width:100%;
+    height:102px;
+    overflow-y:hidden;
+    background-color:#75c9cb;
+    bottom:0px;
+    left:0px;
+    border-top:2px solid #000;
+}
+#thumbsContainer {
+    height:79px;
+    display:block;
+    margin:0;
+    background-color:#000;
+}
+#thumbsWrapper img {
+    float:left;
+    margin:2px;
+    display:block;
+    cursor:pointer;
+    opacity:0.4;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=40);
+}
+#imageWrapper {
+    position:relative;
+    padding-top:96px;
+    text-align:center;
+}
+#imageWrapper img {
+    margin:0 auto;
+    -moz-box-shadow:0px 0px 15px #fff;
+/*    -webkit-box-shadow:2px 2px 10px #fff;
+    box-shadow:2px 2px 10px #fff;*/
+}
+.cursorRight{
+   cursor:url("../icons/next.cur"),url("icons/next.cur"), default;
+}
+.cursorLeft{
+    cursor:url("../icons/prev.cur"),url("icons/prev.cur"), default;
+}
+.cursorPlus{
+    cursor:url("../icons/plus.cur"),url("icons/plus.cur"), default;
+}
+.cursorMinus{
+    cursor:url("../icons/minus.cur"),url("icons/minus.cur"), default;
+}
+.albumbar {
+    display:none;
+}
+
+@font-face {
+    font-family:'VivaldiItalic';
+    src: url('../fonts/vivaldi_italic-webfont.eot');
+    src: url('../fonts/vivaldi_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/vivaldi_italic-webfont.woff') format('woff'),
+         url('../fonts/vivaldi_italic-webfont.ttf') format('truetype'),
+         url('../fonts/vivaldi_italic-webfont.svg#VivaldiItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

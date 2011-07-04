@@ -87,7 +87,6 @@ $(function() {
                 'bottom':'-85px'
             },300);
             if($(window).height() < 800 ) {
-                console.log('Window height is less than 800.');
                 $('#imageWrapper').stop().animate({
                     'padding-top':'25px'
                 },300);
@@ -218,13 +217,12 @@ $(function() {
         if(mode=='expanded' && $(window).height() < 800)
             heightMargin = 55;
         else if (mode=='expanded' && $(window).height() > 800)
-            heightMargin = 180;
+            heightMargin = 130;
         else if (mode=='small')
             heightMargin = 210;
         // type 1 is animate, type 0 is normal
         var windowH = $(window).height()-heightMargin;
         var windowW = $(window).width()-widthMargin;
-        console.log('Window height is ' + windowH);
         var theImage = new Image();
         theImage.src = $image.attr("src");
         var imgwidth = theImage.width;

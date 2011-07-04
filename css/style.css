@@ -14,7 +14,7 @@ a img {border:none;}
 /* ============================================================================
  * Rebuild Styles after reset
  * ==========================================================================*/
-body {margin:0; background:url('images/pattern3.png') repeat left top;}
+body {margin:0; background-color:#231d0d;}
 h1, h2, h3, h4, h5, h6 {margin-bottom:12px; clear:both;}
 hr {background-color:#999; border:0; heigth:1px; margin-bottom:1.5em;}
 p {margin-bottom:12px;}
@@ -54,46 +54,45 @@ h4 {font-size:24px;}
 h5 {font-size:20px;}
 h6 {font-size:16px;}
 
-body {
-    background:#231d0d;
-}
-body .background-left {
-    position:fixed;
-    bottom:-50px;
-    left:-30px;
-    z-index:-1;
-}
-body .background-right {
-    position:fixed;
-    top:-30px;
-    right:-20px;
-    z-index:-1;
-}
-#wrapper {
-    -moz-box-shadow:0 8px 20px #000;
-    -webkit-box-shadow:0 8px 20px #000;
-    box-shadow:0 8px 20px #000;
-    border:1px solid #231d0d;
-    background:#ebebeb;
-    margin-top:2px;
-    margin-bottom:12px;
-}
-#header {
-    margin-left:0;
-    margin-right:0;
-    padding-left:10px;
-    padding-right:10px;
-    padding-top:12px;
-    padding-bottom:12px;
-    background:#75c9cb;
-    position:relative;
-    height:72px;
-    overflow:hidden;
-}
+/* ============================================================================
+ * Layout
+ * ==========================================================================*/
+/* Grid */
+body {min-width:960px;}
+#wrapper {margin-left:auto; margin-right:auto; width:960px;}
+#header, #masthead, #nav, #content, #wb-one, #wb-two, #wb-three, #wb-four, 
+#footer, #fleft, #fright {display:inline; float:left; margin-left:10px; margin-right:10px;}
+/* Widths */
+#header, #content, #footer {width:940px;}
+#nav {width:620px;}
+#masthead {width:300px;}
+#wb-one, #wb-two, #wb-three, #wb-four {width:218px;} /* Not 220px to accomodate 1px border */
+/* No left margin */
+#masthead, #wb-one, #fleft {margin-left:0;}
+/* No right margin */
+#nav, #wb-four, #fright {margin-right:0;}
+/* Position relative */
+
+/* =============================================================================
+ * Background and wrapper styling 
+ * ===========================================================================*/
+.background-left, .background-right {position:fixed; z-index:-1;}
+.background-left {bottom:-50px; left:-30px;}
+.background-right {top:-30px; right:-20px;}
+#wrapper {background:rgba(255,255,255,0.85); margin-top:2px; margin-bottom:2px; overflow:hidden;}
+#header {background:rgba(117,201,203,0.85); margin:0; padding:12px 10px; height:72px; overflow:hidden;}
+#footer {background:rgba(117,201,203,0.85); margin:0; padding:12px 10px; color:#fff;}
+
+/* =============================================================================
+ * Header Area styling
+ * ===========================================================================*/ 
 #site-title {font:normal normal normal 36px/48px 'VivaldiItalic', serif; text-align:center; color:#231d0d; margin:0;}
 #site-title a {color:#231d0d; text-decoration:none;}
 #tag-line {font:italic normal normal 14px/24px Georgia, serif; color:#231d0d; text-align:center; margin:0;}
 
+/* =============================================================================
+ * Menu styling
+ * ===========================================================================*/ 
 #nav ul {list-style:none outside none; text-align:center; margin-top:26px;}
 #nav ul li {display:inline;}
 #nav ul li a {margin-right:12px; text-decoration:none; color:#fff; font-weight:bold; line-height:20px; padding-top:6px; padding-bottom:6px; padding-left:10px; padding-right:10px; -moz-border-radius:4px; -webkit-border-radius:4px; background:#231d0d;}
@@ -103,62 +102,34 @@ body .background-right {
 #second-nav ul {list-style:none outside none; text-align:center;}
 #second-nav ul li {display:inline;}
 #second-nav ul li a {margin-right:12px; text-decoration:none; color:#fff; line-height:20px; padding:6px 10px;}
-#content {
-    margin-top:24px;
-    margin-bottom:24px;
-}
-#bottom-row {
-    margin-top:24px;
-}
-#bottom-row h3 {
-    margin-bottom:12px;
-}
-#box-one, #box-two, #box-three, #box-four {
-    width:218px;
-    height:150px;
-    border:1px solid #494343;
-    position:relative;
-    -moz-box-shadow:inset 0px 0px 10px #000;
-}
-#box-one img, #box-two img{
-    z-index:1;
-}
-#bottom-row h4 {
-    z-index:10;
-    background:rgba(35,29,13,0.8);
-    position:absolute;
-    right:6px;
-    bottom:6px;
-    color:#fff;
-    font:normal normal bold 16px/24px Georgia, serif;
-    width:200px;
-}
-#footer {
-    margin-left:0;
-    margin-right:0;
-    padding-left:10px;
-    padding-right:10px;
-    padding-top:24px;
-    padding-bottom:24px;
-    background:#75c9cb;
-    color:#fff;
-}
-#footer p {
-    margin-bottom:0;
-}
-#footer a {
-    color:#fff;
-    text-decoration:none;
-}
-#slideshow {
-    position:relative;
-    width:900px;
-    margin:0 auto;
-    box-shadow:0 0px 15px #231d0d;
-}
-#slideshow img {
-    width:900px;
-}
+
+/* =============================================================================
+ * Content styling
+ * ===========================================================================*/ 
+#content {margin-top:24px; margin-bottom:24px;}
+
+/* Slideshow styling */
+/* Creates a picture frame effect, check with Mandi
+#slideshow {position:relative; width:920px; height:470px; margin:0 auto; -moz-box-shadow:inset 0 0 15px #231d0d; -moz-border-radius:8px;}
+#slideshow img {width:900px; margin-top:10px; margin-left:10px;} */
+#slideshow {position:relative; width:900px; margin:0 auto; -moz-box-shadow:0 0 15px #231d0d;}
+#slideshow img {width:900px;}
+
+/* =============================================================================
+ * Lower Widget Row Styling
+ * ===========================================================================*/ 
+#widget-row-bottom {margin-top:24px;}
+#widget-row-bottom h3 {margin-bottom:12px;}
+#wb-one, #wb-two, #wb-three, #wb-four {height:150px; border:1px solid #494343; position:relative; -moz-box-shadow:inset 0 0 10px #000;}
+#wb-one img, #wb-two img {z-index:1; margin-top:3px; margin-left:4px;}
+#widget-row-bottom h4 {background:rgba(35,20,13,0.8); position:absolute; right:6px; bottom:6px; padding-left:5px; font:normal normal bold 16px/24px Georgia, serif; color:#fff; width:200px; z-index:10;}
+
+/* ============================================================================= 
+ * Footer Styling
+ * ===========================================================================*/
+#footer p {margin-bottom:0;}
+#footer a {color:#fff; text-decoration:none;}
+
 #banner-image img {
     display:block;
     margin:0 auto;
@@ -166,16 +137,9 @@ body .background-right {
     border:2px solid #231d0d;
 }
 
-@font-face {
-    font-family:'HenryMorganHandRegular';
-    src:url('../fonts/henrymorganhand-webfont.eot');
-    src: url('../fonts/henrymorganhand-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/henrymorganhand-webfont.woff') format('woff'),
-         url('../fonts/henrymorganhand-webfont.ttf') format('truetype'),
-         url('../fonts/henrymorganhand-webfont.svg#HenryMorganHandRegular') format('svg');
-    font-weight:normal;
-    font-weight:normal;
-}
+/* ============================================================================= 
+ * Font-face declarations 
+ * ===========================================================================*/
 @font-face {
     font-family:'VivaldiItalic';
     src: url('../fonts/vivaldi_italic-webfont.eot');

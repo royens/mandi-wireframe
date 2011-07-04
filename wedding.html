@@ -9,23 +9,23 @@
     <body>
         <img class="background-left" src="images/swirl-left.png" />
         <img class="background-right" src="images/swirl-right.png" />
-        <div id="wrapper" class="container_12">
-            <div id="header" class="grid_12">
-                <div id="masthead" class="grid_4 alpha">
+        <div id="wrapper">
+            <div id="header">
+                <div id="masthead">
                     <h1 id="site-title"><a href="index.html" rel="home">Mandi's Photography</a></h1>
                     <div id="tag-line">Capturing Your Life's Memories</div>
                 </div>
-                <div id="nav" class="menu" class="grid_8 omega">
+                <div id="nav" class="menu">
                     <ul>
-                        <li><a class="current" href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="wedding.html">Weddings</a></li>
-                        <li><a href="portraits.html">Portraits</a></li>
-                        <li><a href="proofs.html">Proofs</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a class="current" href="#">Weddings</a></li>
+                        <li><a href="#">Portraits</a></li>
+                        <li><a href="#">Proofs</a></li>
+                        <li><a href="#">Contact Us</a></li>
                     </ul>
                 </div><!-- #nav -->
-                <div id="second-nav" class="menu" class="grid_8 prefix_4">
+                <div id="second-nav" class="menu">
                     <ul>
                         <li><a class="current" href="wedding.html">Introduction</a></li>
                         <li><a href="#">What We Do</a></li>
@@ -34,32 +34,41 @@
                 </div><!-- #second-nav -->
             </div><!-- #header -->
 
-            <div id="content" class="grid_12">
+            <div id="main">
                 <div id="banner-image">
                     <img src="images/wedding-banner.jpg" width="920px" height="300px" />
                 </div>
-                <div id="post" class="grid_8 alpha">
-                    <h1 class="post-title">Quality Wedding Photography</h1>
-                    <div class="body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultrices porta turpis, et pulvinar arcu bibendum quis. Nullam et quam a leo aliquet dapibus a eu dolor. Integer eu erat a eros sollicitudin ornare sed id erat. Etiam pulvinar congue enim, at dignissim ligula ultricies id. Nunc egestas, libero et accumsan convallis, velit purus dapibus nulla, quis cursus dolor nibh eget quam. Etiam vel risus imperdiet massa vehicula blandit. Curabitur justo augue, porta id lacinia quis, dictum vel quam. Vivamus et odio non sapien bibendum luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet massa lorem. Quisque auctor enim vel est ullamcorper vestibulum. Morbi dictum arcu in neque pulvinar vitae rutrum massa scelerisque.</p>
-                        <p>Donec eget felis et velit egestas gravida. Nullam sem tortor, fringilla non convallis ac, viverra sit amet justo. Phasellus sodales leo eu lorem varius ac rutrum diam pretium. Integer sed sapien quis nisi dictum hendrerit sed id augue. Nulla et tortor justo, at iaculis ipsum. Maecenas mollis pellentesque eros in adipiscing. Vestibulum at sagittis dolor. Curabitur pharetra ultrices dui, at fringilla enim luctus nec. Proin eu libero diam. Mauris ac dolor et augue convallis imperdiet.</p>
-                    </div>
-                </div><!-- #post -->
+                <div id="content">
+                    <div id="post">
+                        <h1 class="post-title">Quality Wedding Photography</h1>
+                        <div class="body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultrices porta turpis, et pulvinar arcu bibendum quis. Nullam et quam a leo aliquet dapibus a eu dolor. Integer eu erat a eros sollicitudin ornare sed id erat. Etiam pulvinar congue enim, at dignissim ligula ultricies id. Nunc egestas, libero et accumsan convallis, velit purus dapibus nulla, quis cursus dolor nibh eget quam. Etiam vel risus imperdiet massa vehicula blandit. Curabitur justo augue, porta id lacinia quis, dictum vel quam. Vivamus et odio non sapien bibendum luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet massa lorem. Quisque auctor enim vel est ullamcorper vestibulum. Morbi dictum arcu in neque pulvinar vitae rutrum massa scelerisque.</p>
+                            <p>Donec eget felis et velit egestas gravida. Nullam sem tortor, fringilla non convallis ac, viverra sit amet justo. Phasellus sodales leo eu lorem varius ac rutrum diam pretium. Integer sed sapien quis nisi dictum hendrerit sed id augue. Nulla et tortor justo, at iaculis ipsum. Maecenas mollis pellentesque eros in adipiscing. Vestibulum at sagittis dolor. Curabitur pharetra ultrices dui, at fringilla enim luctus nec. Proin eu libero diam. Mauris ac dolor et augue convallis imperdiet.</p>
+                        </div>
+                    </div><!-- #post -->
+                </div><!-- #content -->
 
-                <div id="attention-boxes">
-                    <div id="att-box-1">
-                        <img src="att-box.png" />
+                <div id="sidebar">
+                    <div class="sidebar-box">
+                        <h4><a href="#">Albums</a></h4>
+                        <a href="#"><img src="images/album.jpg" /></a>
                     </div>
-                </div>
-            </div><!-- #content -->
-
-            <div id="footer" class="grid_12">
-                <div id="left-side" class="grid_8 alpha">
+                    <div class="sidebar-box">
+                        <h4><a href="#">Portfolio</a></h4>
+                        <a href="#"><img src="images/card.jpg" /></a>
+                    </div>
+                </div><!-- #sidebar -->
+            </div><!-- #main -->
+            
+            <div id="footer">
+                <div id="fleft">
                     <p>Mandi's Photography &copy; 2011 all images and content</p>
                     <p>Design by <a href="http://www.royens.com">Roy Ens</a>.</p>
                 </div>
-
+                <div id="fright">
+                    <p>Follow us on <img src="images/f_logo.jpg" width="30" height="30" /></p>
+                </div>
             </div>
-        </div>
+        </div><!-- #wrapper -->
     </body>
 </html>

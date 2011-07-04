@@ -78,15 +78,20 @@ $(function() {
             mode='expanded';
             $this.addClass('cursorMinus')
             .removeClass('cursorLeft cursorRight cursorPlus');
-            $('#header').stop().animate({
-                'top':'-70px'
-            },300);
+            if($(window).height() < 800) {
+                $('#header').stop().animate({
+                    'top':'-70px'
+                },300);
+            }
             $('#thumbsWrapper').stop().animate({
                 'bottom':'-85px'
             },300);
-            $('#imageWrapper').stop().animate({
-                'padding-top':'25px'
-            },300);
+            if($(window).height() < 800 ) {
+                console.log('Window height is less than 800.');
+                $('#imageWrapper').stop().animate({
+                    'padding-top':'25px'
+                },300);
+            }
             resize($this,1);
         }
         else if($this.is('.cursorRight')){
@@ -210,8 +215,10 @@ $(function() {
     function resize($image, type) {
         var widthMargin = 10;
         var heightMargin = 0;
-        if(mode=='expanded')
+        if(mode=='expanded' && $(window).height() < 800)
             heightMargin = 55;
+        else if (mode=='expanded' && $(window).height() > 800)
+            heightMargin = 180;
         else if (mode=='small')
             heightMargin = 210;
         // type 1 is animate, type 0 is normal
